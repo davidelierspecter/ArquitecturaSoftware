@@ -13,7 +13,7 @@ public class Expresso extends BebidaDecorable{
     public Expresso(){
     }
     
-    public Expresso(ICondimento condimento) {
+    public Expresso(Condimento condimento) {
         super(condimento);
     }
     

@@ -13,7 +13,7 @@ import starbuzz_coffee.BebidaDecorable;
 import starbuzz_coffee.Chocolate;
 import starbuzz_coffee.Crema;
 import starbuzz_coffee.Expresso;
-import starbuzz_coffee.ICondimento;
+import starbuzz_coffee.Condimento;
 import starbuzz_coffee.Leche;
 import starbuzz_coffee.Soya;
 
@@ -23,11 +23,9 @@ import starbuzz_coffee.Soya;
  * @author crazy
  */
 public class main {
-
     public static void main(String[] args) {
-        BebidaDecorable expresso = new Expresso(new Chocolate());
-        
+        BebidaDecorable expresso = new Expresso(new Crema(new Chocolate(new Soya())));
+        expresso.imprimirCostos();
+        BebidaDecorable expres = new Expresso();
     }
-    
-    
 }

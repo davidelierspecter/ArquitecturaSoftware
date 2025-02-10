@@ -8,13 +8,11 @@ package starbuzz_coffee;
  *
  * @author crazy
  */
-public class Decaf extends BebidaDecorable {
-    
-    public Decaf(){
+public class HouseBlend extends BebidaDecorable{
+    public HouseBlend(){
     }
     
-    public Decaf(Condimento condimento){
+    public HouseBlend(Condimento condimento){
         super(condimento);
     }
-    
 }

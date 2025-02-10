@@ -8,12 +8,12 @@ package starbuzz_coffee;
  *
  * @author crazy
  */
-public class Decaf extends BebidaDecorable {
+public class DarkRoast extends BebidaDecorable{
     
-    public Decaf(){
+    public DarkRoast(){
     }
     
-    public Decaf(Condimento condimento){
+    public DarkRoast(Condimento condimento){
         super(condimento);
     }
     

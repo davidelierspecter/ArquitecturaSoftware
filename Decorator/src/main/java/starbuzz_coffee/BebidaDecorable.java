@@ -9,12 +9,12 @@ package starbuzz_coffee;
  * @author crazy
  */
 public class BebidaDecorable {
-    private ICondimento condimentos;
+    private Condimento condimentos;
     
     public BebidaDecorable(){
     }
     
-    public BebidaDecorable(ICondimento condimento){
+    public BebidaDecorable(Condimento condimento){
         this.condimentos = condimento;
     }
     

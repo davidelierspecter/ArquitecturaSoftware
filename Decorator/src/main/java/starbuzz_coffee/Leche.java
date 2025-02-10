@@ -8,26 +8,16 @@ package starbuzz_coffee;
  *
  * @author crazy
  */
-public class Leche implements ICondimento {
-    private ICondimento wrappee;
-    
+public class Leche extends Condimento {    
     public Leche(){
+        costo = 15;
+        nombre = "leche";
     }
     
-    public Leche(ICondimento wrappee){
-        this.wrappee = wrappee;
-    }
-    
-    @Override
-    public void imprimir() {
-        System.out.print("Leche ");
-        if(wrappee != null) wrappee.imprimir();
-    }
-
-    @Override
-    public void imprimirCostoDelCondimento() {
-        System.out.print("$15 ");
-        if(wrappee != null) wrappee.imprimirCostoDelCondimento();
+    public Leche(Condimento wrappee){
+        super(wrappee);
+        costo = 15;
+        nombre = "leche";
     }
     
 }

@@ -8,26 +8,15 @@ package starbuzz_coffee;
  *
  * @author crazy
  */
-public class Soya implements ICondimento {
-    private ICondimento wrappee;
-    
+public class Soya extends Condimento {    
     public Soya(){
+        costo = 10;
+        nombre = "soya";
     }
     
-    public Soya(ICondimento wrappee){
-        this.wrappee = wrappee;
-    }
-
-    
-    @Override
-    public void imprimir() {
-        System.out.print("Soya ");
-        if(wrappee != null) wrappee.imprimir();
-    }
-
-    @Override
-    public void imprimirCostoDelCondimento() {
-        System.out.print("$40 ");
-        if(wrappee != null) wrappee.imprimirCostoDelCondimento();
+    public Soya(Condimento wrappee){
+        super(wrappee);
+        costo = 10;
+        nombre = "soya";
     }
 }
