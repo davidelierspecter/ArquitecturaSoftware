@@ -9,12 +9,8 @@ package starbuzz_coffee;
  * @author crazy
  */
 public class Expresso extends BebidaDecorable{
-    
-    public Expresso(){
-    }
-    
+    public Expresso(){}
     public Expresso(Condimento condimento) {
         super(condimento);
     }
-    
 }

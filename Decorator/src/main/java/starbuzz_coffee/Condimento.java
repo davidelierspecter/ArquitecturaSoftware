@@ -11,16 +11,12 @@ package starbuzz_coffee;
 public class Condimento {
     protected float costo;
     protected String nombre;
-    
     private Condimento wrappee;
-    
-    public Condimento(){
+    protected Condimento(){
     }
-    
-    public Condimento(Condimento wrappee){
+    protected Condimento(Condimento wrappee){
         this.wrappee = wrappee;
     }
-
     public void imprimirCostoDelCondimento() {
         System.out.print(nombre + ": " + costo + " ");
         if(wrappee != null) wrappee.imprimirCostoDelCondimento();

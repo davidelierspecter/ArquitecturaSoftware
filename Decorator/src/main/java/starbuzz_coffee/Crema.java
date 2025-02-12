@@ -19,6 +19,4 @@ public class Crema extends Condimento {
         costo = 45;
         nombre = "crema";
     }
-
-    
 }

@@ -10,16 +10,11 @@ package starbuzz_coffee;
  */
 public class BebidaDecorable {
     private Condimento condimentos;
-    
-    public BebidaDecorable(){
-    }
-    
-    public BebidaDecorable(Condimento condimento){
+    protected BebidaDecorable(){}
+    protected BebidaDecorable(Condimento condimento){
         this.condimentos = condimento;
     }
-    
     public void imprimirCostos(){
         if (condimentos != null) condimentos.imprimirCostoDelCondimento();
     }
-    
 }
